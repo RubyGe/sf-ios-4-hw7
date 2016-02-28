@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AC5E112C52E2169DD5A89D9 /* Pods_iOS4_hw7_jsonmaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EC4587255BFAA66A114F84 /* Pods_iOS4_hw7_jsonmaps.framework */; };
 		D1A6E73B1C823F88007D85A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A6E73A1C823F88007D85A7 /* AppDelegate.swift */; };
 		D1A6E73D1C823F88007D85A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A6E73C1C823F88007D85A7 /* ViewController.swift */; };
 		D1A6E7401C823F88007D85A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A6E73E1C823F88007D85A7 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F586CD494AE3987CA70C66C /* Pods-iOS4-hw7-jsonmaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS4-hw7-jsonmaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS4-hw7-jsonmaps/Pods-iOS4-hw7-jsonmaps.debug.xcconfig"; sourceTree = "<group>"; };
+		9FF433841634807EC68B1B08 /* Pods-iOS4-hw7-jsonmaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS4-hw7-jsonmaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS4-hw7-jsonmaps/Pods-iOS4-hw7-jsonmaps.release.xcconfig"; sourceTree = "<group>"; };
 		D1A6E7371C823F87007D85A7 /* iOS4-hw7-jsonmaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS4-hw7-jsonmaps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A6E73A1C823F88007D85A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A6E73C1C823F88007D85A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D1A6E7441C823F88007D85A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1A6E7461C823F88007D85A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A6E74C1C82404B007D85A7 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		D6EC4587255BFAA66A114F84 /* Pods_iOS4_hw7_jsonmaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS4_hw7_jsonmaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC5E112C52E2169DD5A89D9 /* Pods_iOS4_hw7_jsonmaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655ADD0F3446AA0E2F83F882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F586CD494AE3987CA70C66C /* Pods-iOS4-hw7-jsonmaps.debug.xcconfig */,
+				9FF433841634807EC68B1B08 /* Pods-iOS4-hw7-jsonmaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC70E47D57616411C393ED4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6EC4587255BFAA66A114F84 /* Pods_iOS4_hw7_jsonmaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1A6E72E1C823F87007D85A7 = {
 			isa = PBXGroup;
 			children = (
 				D1A6E7391C823F88007D85A7 /* iOS4-hw7-jsonmaps */,
 				D1A6E7381C823F87007D85A7 /* Products */,
+				655ADD0F3446AA0E2F83F882 /* Pods */,
+				BC70E47D57616411C393ED4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1A6E7491C823F88007D85A7 /* Build configuration list for PBXNativeTarget "iOS4-hw7-jsonmaps" */;
 			buildPhases = (
+				91933446FDF05D89B9D464F8 /* Check Pods Manifest.lock */,
 				D1A6E7331C823F87007D85A7 /* Sources */,
 				D1A6E7341C823F87007D85A7 /* Frameworks */,
 				D1A6E7351C823F87007D85A7 /* Resources */,
+				673383017EFB4FB4636E69E1 /* Embed Pods Frameworks */,
+				97C1ED9292AD736CAC3BC617 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		673383017EFB4FB4636E69E1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS4-hw7-jsonmaps/Pods-iOS4-hw7-jsonmaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91933446FDF05D89B9D464F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97C1ED9292AD736CAC3BC617 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS4-hw7-jsonmaps/Pods-iOS4-hw7-jsonmaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1A6E7331C823F87007D85A7 /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		D1A6E74A1C823F88007D85A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F586CD494AE3987CA70C66C /* Pods-iOS4-hw7-jsonmaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS4-hw7-jsonmaps/Info.plist";
@@ -260,6 +336,7 @@
 		};
 		D1A6E74B1C823F88007D85A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF433841634807EC68B1B08 /* Pods-iOS4-hw7-jsonmaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS4-hw7-jsonmaps/Info.plist";
@@ -288,6 +365,7 @@
 				D1A6E74B1C823F88007D85A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
